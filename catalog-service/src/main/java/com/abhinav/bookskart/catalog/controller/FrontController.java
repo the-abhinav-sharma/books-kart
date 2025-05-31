@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FrontController {
 
-	@GetMapping("/health")
-	public String health() {
-		return "Catalog-Service is up and running";
-		
-	}
+    @GetMapping("/health")
+    public String health() {
+        return "Catalog-Service is up and running";
+    }
 }
