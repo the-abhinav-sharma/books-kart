@@ -10,9 +10,8 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-
 import java.math.BigDecimal;
+import lombok.Data;
 
 @Entity
 @Table(name = "products")
@@ -24,19 +23,15 @@ class ProductEntity {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    @NotBlank(message = "Product code is required") 
-    private String code;
+    @NotBlank(message = "Product code is required") private String code;
 
-    @NotBlank(message = "Product name is required") 
-    @Column(nullable = false)
+    @NotBlank(message = "Product name is required") @Column(nullable = false)
     private String name;
 
     private String description;
 
     private String imageUrl;
 
-    @NotNull(message = "Product price is required") 
-    @DecimalMin("0.1") 
-    @Column(nullable = false)
+    @NotNull(message = "Product price is required") @DecimalMin("0.1") @Column(nullable = false)
     private BigDecimal price;
 }
