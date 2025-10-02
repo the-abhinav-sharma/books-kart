@@ -1,4 +1,4 @@
-name: 'spring-boot-microservices-course'
+name: 'books-kart-application'
 services:
   catalog-service:
     image: abhinav19sharma/bookskart-catalog-service
