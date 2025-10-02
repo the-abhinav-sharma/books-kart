@@ -24,7 +24,7 @@ tasks:
 
   build:
     cmds:
-      - "{{.MVNW}}  verify"
+      - "{{.MVNW}}  -pl catalog-service spring-boot:build-image -DskipTests"
 
   start_infra:
     cmds:
