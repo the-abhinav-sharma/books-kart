@@ -1,4 +1,4 @@
-name: 'books-kart-application'
+name: 'bookskart-application'
 services:
   catalog-service:
     image: abhinav19sharma/bookskart-catalog-service
